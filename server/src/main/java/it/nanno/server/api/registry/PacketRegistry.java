@@ -8,6 +8,6 @@ public interface PacketRegistry<V> {
 
     void registerPacket(int packetId, Class<?> packetClazz);
 
-    V getInstanceById(int packetId);
+    <T> T getInstanceById(int packetId);
 
 }

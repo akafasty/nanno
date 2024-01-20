@@ -2,7 +2,7 @@ package it.nanno;
 
 import it.nanno.api.decryptor.IDecryptor;
 import it.nanno.api.encrpytor.IEncryptor;
-import it.nanno.decryptor.DefaultDecryptorImpl;
+import it.nanno.decryptor.StandardDecryptorImpl;
 import it.nanno.encryptor.DefaultEncryptorImpl;
 import it.nanno.util.FileUtils;
 
@@ -21,7 +21,7 @@ public class NannoApplication {
 
     public NannoApplication() {
         this.encryptor = new DefaultEncryptorImpl();
-        this.decryptor = new DefaultDecryptorImpl();
+        this.decryptor = new StandardDecryptorImpl();
     }
 
     public void doTheJob(String... arguments) throws InterruptedException {

@@ -64,7 +64,6 @@ public class NannoSocketServer {
                     exception.printStackTrace();
                     System.out.println("an error ocurred");
                 }
-
             }
         }
     }

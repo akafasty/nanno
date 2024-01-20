@@ -29,8 +29,6 @@ public class PacketPlayInScreen implements Packet<BufferedImage> {
     @Override
     public void doSomething() {
 
-        System.out.println("System.getProperty(\"user.dir\") = " + System.getProperty("user.dir"));
-
         Path path = Paths.get(System.getProperty("user.dir"))
                 .resolve(username);
         //File file = Paths.get(System.currentTimeMillis() + ".png").toFile();

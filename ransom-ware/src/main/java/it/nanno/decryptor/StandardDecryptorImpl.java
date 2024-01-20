@@ -12,7 +12,7 @@ import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.Base64;
 
-public class DefaultDecryptorImpl implements IDecryptor {
+public class StandardDecryptorImpl implements IDecryptor {
 
     @Override
     public void decryptFile(File file) {
